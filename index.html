@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstarp -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+
+    <!-- crsl -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- prgrs br -->
+    <link rel="stylesheet" type="text/css" href="loading-bar.css" />
+
+
+    <style>
+        .swiper-container,
+        .swiper-container2 {
+            width: 100%;
+            height: 101%;
+        }
+
+        .swiper-slide {
+            width: 30%;
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- navbar -->
+    <div class="container">
+        <div class="row my-2">
+            <div class="col d-flex justify-content-between">
+                <form class="form-inline my-2 my-lg-0">
+                    <div class="d-flex btn-group-toggle" data-toggle="buttons">
+                        <label class="btn grp-btn--left">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> <i
+                                class="fas fa-shopping-cart"></i>
+                        </label>
+                        <label class="btn grp-btn--right active">
+                            <input class="buy" type="radio" name="options" id="option1" autocomplete="off" checked> سبد
+                            خرید
+                        </label>
+                    </div>
+
+                    <input class="form-control search-box left mr-2 border-left-0 " type="search" placeholder="جست وجو"
+                        aria-label="Search">
+                    <div class="input-group-prepend bg-white">
+                        <div class="input-group-text middle border-left-0 border-right-0"><a href=""><i
+                                    class="fas fa-search"></i></a></div>
+                    </div>
+                    <div class="btn-group ">
+                        <button type="button" class="btn bg-white border right text-secondary border-right-0"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-layer-group"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <button class="dropdown-item" type="button">Action</button>
+                            <button class="dropdown-item" type="button">Another action</button>
+                            <button class="dropdown-item" type="button">Something else here</button>
+                        </div>
+                    </div>
+                </form>
+                <div>
+                    <h3>
+                        DOKAN
+                    </h3>
+                    <p>
+                        فروش انواع کالا
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  p-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">دسته بندی کالاها <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">سوپر مارکت</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        تخفیف ها و کالاها
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">فروشنده شوید</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">سوالی دارید؟</a>
+                </li>
+            </ul>
+
+            <div class="mr-auto px-2 py-1 border rounded">
+                <a href=""><i class="far fa-user pl-2"></i>ورود به حساب کاربری </a>
+
+            </div>
+
+
+        </div>
+    </nav>
+
+    <!-- slider -->
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-3">
+                <a href="">
+                    <img class="card-img " src="./img/digistyle.jpg" style="height: 280px;" alt="Card image">
+                </a>
+            </div>
+            <div class="col-md-9">
+                <div id="carouselExampleIndicators" class="carousel main-carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item main-carousel__item  active">
+                            <img class="d-block w-100" style="height: 280px" src="./img/1598506589.jpg"
+                                alt="First slide">
+                        </div>
+                        <div class="carousel-item main-carousel__item">
+                            <img class="d-block w-100" style="height: 280px" src="./img/1598256716.jpg"
+                                alt="Third slide">
+                        </div>
+                        <div class="carousel-item main-carousel__item">
+                            <img class="d-block w-100" style="height: 280px"
+                                src="./img/Screen-Shot-2016-06-24-at-2.34.32-PM.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- takhfifdar ha -->
+    <section class="off p-5 ">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-9 ">
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card p-2">
+                                    <img class="card-img-top" src="./img/2778396.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <p class="card-text text-right">تابلو سه تیکه ایشیل</p>
+                                        <p class="card-text font-weight-bold mb-0"><span
+                                                class="bg-danger px-2 py-1 mr-1 text-white rounded-pill">25%</span><del
+                                                class="text-muted">25000</del></p>
+                                        <p class="card-text font-weight-bold mt-1"> 15000 تومان </p>
+
+                                        <a href="#" class="btn btn-danger px-2 py-0 d-block ">مشخصات</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card p-2">
+                                    <img class="card-img-top" src="./img/97030.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <p class="card-text text-right">تابلو سه تیکه ایشیل</p>
+                                        <p class="card-text font-weight-bold mb-0"><span
+                                                class="bg-danger px-2 py-1 mr-1 text-white rounded-pill">25%</span><del
+                                                class="text-muted">25000</del></p>
+                                        <p class="card-text font-weight-bold mt-1"> 15000 تومان </p>
+
+                                        <a href="#" class="btn btn-danger px-2 py-0 d-block ">مشخصات</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card p-2">
+                                    <img class="card-img-top"
+                                        src="./img/cdc095a72e225b307445e1aafdd75b5c0dfb5831_1597837705.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <p class="card-text text-right">تابلو سه تیکه ایشیل</p>
+                                        <p class="card-text font-weight-bold mb-0"><span
+                                                class="bg-danger px-2 py-1 mr-1 text-white rounded-pill">25%</span><del
+                                                class="text-muted">25000</del></p>
+                                        <p class="card-text font-weight-bold mt-1"> 15000 تومان </p>
+
+                                        <a href="#" class="btn btn-danger px-2 py-0 d-block ">مشخصات</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card p-2">
+                                    <img class="card-img-top" src="./img/2778396.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <p class="card-text text-right">تابلو سه تیکه ایشیل</p>
+                                        <p class="card-text font-weight-bold mb-0"><span
+                                                class="bg-danger px-2 py-1 mr-1 text-white rounded-pill">25%</span><del
+                                                class="text-muted">25000</del></p>
+                                        <p class="card-text font-weight-bold mt-1"> 15000 تومان </p>
+
+                                        <a href="#" class="btn btn-danger px-2 py-0 d-block ">مشخصات</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card p-2">
+                                    <img class="card-img-top" src="./img/2778396.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <p class="card-text text-right">تابلو سه تیکه ایشیل</p>
+                                        <p class="card-text font-weight-bold mb-0"><span
+                                                class="bg-danger px-2 py-1 mr-1 text-white rounded-pill">25%</span><del
+                                                class="text-muted">25000</del></p>
+                                        <p class="card-text font-weight-bold mt-1"> 15000 تومان </p>
+
+                                        <a href="#" class="btn btn-danger px-2 py-0 d-block ">مشخصات</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card p-2 bg-white d-flex justify-content-center">
+                        <h6 class="card-title text-right">پیشنهادات لحظه ای برای شما</h6>
+
+                        <img class="card-img-top w-75 m-auto" src="./img/teles.jpg" alt="Card image cap">
+                        <div class="card-body">
+
+                            <p class="card-text text-right">تابلو سه تیکه ایشیل</p>
+                            <p class="card-text font-weight-bold mb-0"><span
+                                    class="bg-danger px-2 py-1 mr-1 text-white rounded-pill">25%</span><del
+                                    class="text-muted">25000</del></p>
+                            <p class="card-text font-weight-bold mt-1"> 15000 تومان </p>
+                            <div id="myItem1"></div>
+
+                            <a href="#" class="btn btn-danger px-2 py-0 d-block mt-4 ">مشخصات</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- DASTEbandi -->
+    <section class="category mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="">
+                        <img class="card-img h-100" src="./img/1000003322.jpg" alt="Card image">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="">
+                        <img class="card-img " src="./img/1000003456.jpg" alt="Card image">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="">
+                        <img class="card-img " src="./img/1000003547.jpg" alt="Card image">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="">
+                        <img class="card-img " src="./img/1000003570.jpg" alt="Card image">
+                    </a>
+                </div>
+                <div class="col mt-4 px-0">
+                    <a href="">
+                        <div class="card rounded-circle">
+                            <img class="card-img" src="./img/banner-2.jpg" alt="Card image">
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- digital -->
+    <section class="digital-offers">
+        <div class="container bg-white rounded overflow-hidden">
+            <h6 class="text-right pt-3">کالای دیجیتال</h6>
+            <hr>
+
+
+            <div class="swiper-container2 row mx-auto">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper mx-auto">
+
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="card card-transform border-0 p-2">
+                                <img class="card-img-top img-fluid" src="./img/digi (2).jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text text-right">گوشی موبایل SUMSUNG</p>
+
+                                    <p class="card-text font-weight-bold mt-1"> 15000 تومان </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="card card-transform border-0 p-2">
+                                <img class="card-img-top" src="./img/digi (3).jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text text-right">گوشی موبایل SUMSUNG</p>
+
+                                    <p class="card-text font-weight-bold mt-1"> 15000 تومان </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="card card-transform border-0 p-2">
+                                <img class="card-img-top" src="./img/digi (4).jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text text-right">گوشی موبایل SUMSUNG</p>
+
+                                    <p class="card-text font-weight-bold mt-1"> 15000 تومان </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="card card-transform border-0 p-2">
+                                <img class="card-img-top" src="./img/digi (5).jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text text-right">گوشی موبایل SUMSUNG</p>
+
+                                    <p class="card-text font-weight-bold mt-1"> 15000 تومان </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="card card-transform border-0 p-2">
+                                <img class="card-img-top" src="./img/digi (6).jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text text-right">گوشی موبایل SUMSUNG</p>
+
+                                    <p class="card-text font-weight-bold mt-1"> 15000 تومان </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ctgty h200 -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="">
+                        <div class="card-h200 card-transform ml-2 my-5"
+                            style="background-image: url(./img/bag&shoe.jpg); height: 200px; ">
+                            <div class="card-h200_right text-right">
+                                <h6>انواع کیف</h6>
+                                <p>هر لحظه زندگی کن</p>
+                                <button type="button" class="btn btn-danger px-4 pb-1 pt-0  ">خرید</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6">
+                    <a href="">
+                        <div class="card-h200 card-transform ml-2 my-5"
+                            style="background-image: url(./img/whatch.jpg); height: 200px; ">
+                            <div class="card-h200_left text-left">
+                                <h6>انواع ساعت</h6>
+                                <p>هر لحظه زندگی کن</p>
+                                <button type="button" class="btn btn-danger px-4 pb-1 pt-0  ">خرید</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- porbazdid -->
+    <section class="digital-offers">
+        <div class="container bg-white rounded overflow-hidden">
+            <h6 class="text-right pt-3">محصولات پر بازدید اخیر </h6>
+            <hr>
+            <div class="swiper-container2 row">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="card card-transform border-0 p-2">
+                                <img class="card-img-top" src="./img/digi (2).jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text text-right">گوشی موبایل SUMSUNG</p>
+
+                                    <p class="card-text font-weight-bold mt-1"> 15000 تومان </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="card card-transform border-0 p-2">
+                                <img class="card-img-top" src="./img/digi (3).jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text text-right">گوشی موبایل SUMSUNG</p>
+
+                                    <p class="card-text font-weight-bold mt-1"> 15000 تومان </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="card card-transform border-0 p-2">
+                                <img class="card-img-top" src="./img/digi (4).jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text text-right">گوشی موبایل SUMSUNG</p>
+
+                                    <p class="card-text font-weight-bold mt-1"> 15000 تومان </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="card card-transform border-0 p-2">
+                                <img class="card-img-top" src="./img/digi (5).jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text text-right">گوشی موبایل SUMSUNG</p>
+
+                                    <p class="card-text font-weight-bold mt-1"> 15000 تومان </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="card card-transform border-0 p-2">
+                                <img class="card-img-top" src="./img/digi (6).jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text text-right">گوشی موبایل SUMSUNG</p>
+
+                                    <p class="card-text font-weight-bold mt-1"> 15000 تومان </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- catgry -->
+    <section class="categores my-5 ">
+        <div class="container bg-white rounded overflow-hidden">
+            <h6 class="text-right pt-3">دسته بندی کالاها </h6>
+            <hr>
+            <div class="d-flex justify-content-between px-1 text-center text-dark">
+                <a href="">
+                    <div class="card-body ">
+                        <i class="fas fa-desktop fa-3x text-secondary"></i>
+                        <p class="card-text font-weight-bold mb-1 mt-2 "> کالای دیجیتال </p>
+                    </div>
+                </a>
+
+                <div class="card-body">
+                    <i class="fas fa-utensils fa-3x text-secondary"></i>
+                    <p class="card-text font-weight-bold mb-1 mt-2 "> مواد خوراکی </p>
+                </div>
+                <div class="card-body">
+                    <i class="fas fa-campground fa-3x text-secondary"></i>
+                    <p class="card-text font-weight-bold mb-1 mt-2 "> ورزش و سفر </p>
+                </div>
+                <div class="card-body">
+                    <i class="fas fa-baby fa-3x text-secondary"></i>
+                    <p class="card-text font-weight-bold mb-1 mt-2 "> اسباب بازی </p>
+                </div>
+                <div class="card-body">
+                    <i class="fas fa-tools fa-3x text-secondary"></i>
+                    <p class="card-text font-weight-bold mb-1 mt-2 "> ابزارالات </p>
+                </div>
+                <div class="card-body">
+                    <i class="fas fa-pencil-ruler fa-3x text-secondary"></i>
+                    <p class="card-text font-weight-bold mb-1 mt-2 "> لوازم التحریر </p>
+                </div>
+                <div class="card-body">
+                    <i class="fas fa-baby fa-3x text-secondary"></i>
+                    <p class="card-text font-weight-bold mb-1 mt-2 "> سلامتی و زیبایی </p>
+                </div>
+                <div class="card-body">
+                    <i class="fas fa-tshirt fa-3x text-secondary"></i>
+                    <p class="card-text font-weight-bold mb-1 mt-2 "> پوشاک و البسه </p>
+                </div>
+                <div class="card-body">
+                    <i class="fas fa-couch fa-3x text-secondary"></i>
+                    <p class="card-text font-weight-bold mb-1 mt-2 "> دکراسیون </p>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- porfroosh -->
+    <section class="digital-offers">
+        <div class="container bg-white rounded overflow-hidden">
+            <h6 class="text-right pt-3">محصولات پر فروش اخیر </h6>
+            <hr>
+            <div class="swiper-container2 row">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="card card-transform border-0 p-2">
+                                <img class="card-img-top" src="./img/digi (2).jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text text-right">گوشی موبایل SUMSUNG</p>
+
+                                    <p class="card-text font-weight-bold mt-1"> 15000 تومان </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="card card-transform border-0 p-2">
+                                <img class="card-img-top" src="./img/digi (3).jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text text-right">گوشی موبایل SUMSUNG</p>
+
+                                    <p class="card-text font-weight-bold mt-1"> 15000 تومان </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="card card-transform border-0 p-2">
+                                <img class="card-img-top" src="./img/digi (4).jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text text-right">گوشی موبایل SUMSUNG</p>
+
+                                    <p class="card-text font-weight-bold mt-1"> 15000 تومان </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="card card-transform border-0 p-2">
+                                <img class="card-img-top" src="./img/digi (5).jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text text-right">گوشی موبایل SUMSUNG</p>
+
+                                    <p class="card-text font-weight-bold mt-1"> 15000 تومان </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="card card-transform border-0 p-2">
+                                <img class="card-img-top" src="./img/digi (6).jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text text-right">گوشی موبایل SUMSUNG</p>
+
+                                    <p class="card-text font-weight-bold mt-1"> 15000 تومان </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- last update -->
+    <section class="digital-offers mt-5">
+        <div class="container bg-white rounded overflow-hidden">
+            <h6 class="text-right pt-3"> آخرین محصولات اضافه شده </h6>
+            <hr>
+            <div class="swiper-container2 row">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="card card-transform border-0 p-2">
+                                <img class="card-img-top" src="./img/digi (2).jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text text-right">گوشی موبایل SUMSUNG</p>
+
+                                    <p class="card-text font-weight-bold mt-1"> 15000 تومان </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="card card-transform border-0 p-2">
+                                <img class="card-img-top" src="./img/digi (3).jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text text-right">گوشی موبایل SUMSUNG</p>
+
+                                    <p class="card-text font-weight-bold mt-1"> 15000 تومان </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="card card-transform border-0 p-2">
+                                <img class="card-img-top" src="./img/digi (4).jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text text-right">گوشی موبایل SUMSUNG</p>
+
+                                    <p class="card-text font-weight-bold mt-1"> 15000 تومان </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="card card-transform border-0 p-2">
+                                <img class="card-img-top" src="./img/digi (5).jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text text-right">گوشی موبایل SUMSUNG</p>
+
+                                    <p class="card-text font-weight-bold mt-1"> 15000 تومان </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="card card-transform border-0 p-2">
+                                <img class="card-img-top" src="./img/digi (6).jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text text-right">گوشی موبایل SUMSUNG</p>
+
+                                    <p class="card-text font-weight-bold mt-1"> 15000 تومان </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- brand -->
+    <section class="brand-offers mt-5">
+        <div class="container bg-white rounded overflow-hidden">
+            <h5 class="text-right pt-3">برند های برتر </h5>
+            <hr>
+
+
+            <div class="swiper-container3 row">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="card card-transform border-0 p-2">
+                                <img class="card-img-top brand-img" src="./img/hwei.png" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="card card-transform border-0 p-2">
+                                <img class="card-img-top brand-img" src="./img/hwei.png" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="card card-transform border-0 p-2">
+                                <img class="card-img-top brand-img" src="./img/hwei.png" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="card card-transform border-0 p-2">
+                                <img class="card-img-top brand-img" src="./img/hwei.png" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="card card-transform border-0 p-2">
+                                <img class="card-img-top brand-img" src="./img/hwei.png" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="card card-transform border-0 p-2">
+                                <img class="card-img-top brand-img" src="./img/hwei.png" alt="Card image cap">
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-gray pt-4 mt-5">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <div class="row">
+                <div class="col-md-2 mx-auto text-right">
+
+                    <a href="">
+                        <h6 class="font-weight-bold text-uppercase mt-3 mb-4 ">راهنمای خرید از دکان</h6>
+                    </a>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">نحوه ثبت سفارش</a>
+                        </li>
+                        <li>
+                            <a href="#!">رویه ارسال سفارش</a>
+                        </li>
+                        <li>
+                            <a href="#!">شیوه‌های پرداخت</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto text-right">
+
+                    <a href="">
+                        <h6 class="font-weight-bold text-uppercase mt-3 mb-4 "> خدمات مشتری </h6>
+                    </a>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">پاسخ به پرسش‌های متداول</a>
+                        </li>
+                        <li>
+                            <a href="#!">رویه‌های بازگرداندن کالا</a>
+                        </li>
+                        <li>
+                            <a href="#!">شرایط استفاده</a>
+                        </li>
+                        <li>
+                            <a href="#!">حریم خصوصی</a>
+                        </li>
+                        <li>
+                            <a href="#!">گزارش باگ</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto text-right">
+
+                    <a href="">
+                        <h6 class="font-weight-bold text-uppercase mt-3 mb-4 ">با دکان</h6>
+                    </a>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">اتاق خبر دکان</a>
+                        </li>
+                        <li>
+                            <a href="#!">فروش در دکان</a>
+                        </li>
+                        <li>
+                            <a href="#!">تماس با دکان</a>
+                        </li>
+                        <li>
+                            <a href="#!">درباره دکان</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-4 mx-auto text-right">
+
+                    <h6 class="font-weight-bold text-uppercase mt-3 mb-4 text-dark">از تخفیف ها و محصولات جدید دکان با
+                        خبر شو: </h6>
+                    <div class="d-flex">
+                        <input type="email" class="form-control br-left" id="inputEmail4" placeholder="ایمیل">
+
+                        <button type="button" class="btn btn-danger br-right">ارسال</button>
+                    </div>
+
+                    <h6 class="font-weight-bold text-uppercase mt-3 mb-4 text-dark">دکان را در شبکه های اجتماعی دنبال
+                        کنید:</h6>
+                    <div class="d-flex">
+                        <a href=""><i class="fab fa-instagram fa-2x ml-2"></i></a>
+                        <a href=""><i class="fab fa-telegram fa-2x ml-2"></i></a>
+                        <a href=""><i class="fab fa-twitter-square fa-2x"></i></a>
+                    </div>
+
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <hr>
+
+
+
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 PayPracts
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+
+
+
+
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+
+    <!-- prgrs br -->
+    <script type="text/javascript" src="loading-bar.js"></script>
+    <script>
+        /* construct manually */
+        var bar1 = new ldBar("#myItem1");
+        /* ldBar stored in the element */
+        var bar2 = document.getElementById('myItem1').ldBar;
+        bar1.set(60);
+    </script>
+
+    <!-- crsl -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+
+
+        // function slider(id) {
+        new Swiper('.swiper-container', {
+            breakpoints: {
+                480: {
+                    slidesPerView: 1,
+                },
+                640: {
+                    slidesPerView: 4,
+                },
+            },
+
+            slidesPerView: 'auto',
+            autoplay: {
+                delay: 3000,
+            },
+            loop: true,
+            spaceBetween: 10,
+
+        });
+        new Swiper('.swiper-container2', {
+            breakpoints: {
+                480: {
+                    slidesPerView: 2,
+                },
+                640: {
+                    slidesPerView: 6,
+                },
+            },
+
+            slidesPerView: 'auto',
+            autoplay: {
+                delay: 3000,
+            },
+            loop: true,
+            spaceBetween: 10,
+
+        });
+        new Swiper('.swiper-container3', {
+            breakpoints: {
+                480: {
+                    slidesPerView: 4,
+                },
+                640: {
+                    slidesPerView: 9,
+                },
+            },
+
+            slidesPerView: 'auto',
+            autoplay: {
+                delay: 4000,
+            },
+            loop: true,
+            spaceBetween: 10,
+
+        });
+
+
+        // }
+
+        // slider('.swiper-container')
+        // slider('.swiper-container2')
+
+
+
+    </script>
+</body>
+
+</html>

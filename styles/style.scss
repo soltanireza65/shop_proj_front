@@ -1,0 +1,56 @@
+@import "./colors";
+@import "./buttons";
+@import "./carousel";
+@import "./card";
+@import "./_navbar";
+@import "./footer";
+
+
+*{
+    margin: 0;
+	padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: rgb(244, 244, 248);
+    font-size: 0.8rem !important;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+    &:hover{
+        color: rgb(56, 56, 56);
+        text-decoration: none;
+    }
+}
+
+.bg-primary{
+    height: 300px;
+}
+
+// .off{
+//     background: linear-gradient(rgba(rgb(228, 228, 228), 0.9)) ,url(../img/Discount.jpg);
+//     background-position: fixed;
+// }
+
+.digital-offers{
+    // height: 300px;
+    .swiper-slide{
+        // height: 150px;
+    }
+}
+
+.card-img-top{
+    // height: 10%;
+    // width: auto;
+}
+
+
+  
+
+  
+ 
