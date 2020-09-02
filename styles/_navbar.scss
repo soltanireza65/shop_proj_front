@@ -1,6 +1,25 @@
+*:focus,
+*:active {
+    outline: none !important;
+    border: none;
+    /* border-color: inherit !important; */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+
 .search-box{
     width: 500px !important;
+    border: none;
+    &:focus{
+        border: none;
+    }
 }
+
+// input{
+//     border: none;
+
+// }
 
 
 .left{
@@ -20,4 +39,12 @@
     border-radius: 5px 0 0 5px ;
     background-color: white;
 
+}
+
+.nav-item{
+    margin-left: auto;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
 }

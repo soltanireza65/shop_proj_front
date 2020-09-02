@@ -17,6 +17,9 @@
     <link rel="stylesheet" type="text/css" href="loading-bar.css" />
 
 
+
+
+    <link rel="stylesheet" href="./styles/style.css">
     <style>
         .swiper-container,
         .swiper-container2 {
@@ -29,8 +32,6 @@
         }
     </style>
 
-
-    <link rel="stylesheet" href="./styles/style.css">
     <title>Document</title>
 </head>
 
@@ -40,21 +41,17 @@
     <!-- navbar -->
     <div class="container">
         <div class="row my-2">
-            <div class="col d-flex justify-content-between">
-                <form class="form-inline my-2 my-lg-0">
-                    <div class="d-flex btn-group-toggle" data-toggle="buttons">
-                        <label class="btn grp-btn--left">
-                            <input type="radio" name="options" id="option3" autocomplete="off"> <i
-                                class="fas fa-shopping-cart"></i>
-                        </label>
-                        <label class="btn grp-btn--right active">
-                            <input class="buy" type="radio" name="options" id="option1" autocomplete="off" checked> سبد
-                            خرید
-                        </label>
-                    </div>
+            <div class="col d-flex justify-content-between align-items-center">
+                <!-- LOGO -->
+                <div class="logo">
+                    <h3>
+                        DOKAN
+                    </h3>
+                </div>
+                <form class="form-inline my-2 my-lg-0 ml-auto">
 
-                    <input class="form-control search-box left mr-2 border-left-0 " type="search" placeholder="جست وجو"
-                        aria-label="Search">
+                    <input style="outline-color: black;" class="form-control search-box left mr-2 border-left-0 "
+                        type="search" placeholder="جست وجو" aria-label="Search">
                     <div class="input-group-prepend bg-white">
                         <div class="input-group-text middle border-left-0 border-right-0"><a href=""><i
                                     class="fas fa-search"></i></a></div>
@@ -71,14 +68,18 @@
                         </div>
                     </div>
                 </form>
-                <div>
-                    <h3>
-                        DOKAN
-                    </h3>
-                    <p>
-                        فروش انواع کالا
-                    </p>
+
+                <div class="d-flex btn-group-toggle my-2 my-lg-0" style="height: 40px;" data-toggle="buttons">
+                    <label class="btn grp-btn--left">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> <i
+                            class="fas fa-shopping-cart"></i>
+                    </label>
+                    <label class="btn grp-btn--right active">
+                        <input class="buy" type="radio" name="options" id="option1" autocomplete="off" checked> سبد
+                        خرید
+                    </label>
                 </div>
+
             </div>
         </div>
     </div>
@@ -90,7 +91,10 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
+
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
             <ul class="navbar-nav  p-0">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">دسته بندی کالاها <span class="sr-only">(current)</span></a>
@@ -118,13 +122,26 @@
                 </li>
             </ul>
 
-            <div class="mr-auto px-2 py-1 border rounded">
-                <a href=""><i class="far fa-user pl-2"></i>ورود به حساب کاربری </a>
-
-            </div>
 
 
         </div>
+
+
+        <div class="dropdown mr-auto px-2 py-1 border rounded">
+            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                ورود به حساب کاربری
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#"></a>
+                <a class="dropdown-item" href="#">Another action</a>
+            </div>
+        </div>
+
+        <!-- <div class="mr-auto px-2 py-1 border rounded">
+            <a href=""><i class="far fa-user pl-2"></i>ورود به حساب کاربری </a>
+        </div> -->
+
     </nav>
 
     <!-- slider -->
