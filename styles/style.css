@@ -61,6 +61,13 @@
           filter: none;
 }
 
+.card-img-2 {
+  border-radius: 10px;
+  z-index: -1;
+  background-image: url(/img/iran.jpg) -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0)), to(red));
+  background-image: url(/img/iran.jpg) linear-gradient(to right, rgba(255, 0, 0, 0), red);
+}
+
 *:focus,
 *:active {
   outline: none !important;
@@ -122,7 +129,6 @@
 * {
   margin: 0;
   padding: 0;
-  border: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }

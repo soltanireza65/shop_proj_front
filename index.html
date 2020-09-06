@@ -44,41 +44,77 @@
             <div class="col d-flex justify-content-between align-items-center">
                 <!-- LOGO -->
                 <div class="logo">
-                    <h3>
-                        DOKAN
-                    </h3>
+                    <a href="">
+                        <h3 class="text-danger font-weight-bold d-flex ">
+                            DOKAN
+                        </h3>
+                    </a>
                 </div>
-                <form class="form-inline my-2 my-lg-0 ml-auto">
+                <form class="form-inline my-2 my-lg-0 ml-auto bg-white rounded mx-2">
 
-                    <input style="outline-color: black;" class="form-control search-box left mr-2 border-left-0 "
-                        type="search" placeholder="جست وجو" aria-label="Search">
+                    <input style="outline-color: black;" class="form-control search-box " type="search"
+                        placeholder="جست وجو" aria-label="Search">
                     <div class="input-group-prepend bg-white">
-                        <div class="input-group-text middle border-left-0 border-right-0"><a href=""><i
-                                    class="fas fa-search"></i></a></div>
+                        <div class="input-group-text middle border-0"><a href=""><i class="fas fa-search"></i></a></div>
                     </div>
-                    <div class="btn-group ">
-                        <button type="button" class="btn bg-white border right text-secondary border-right-0"
+                    <div class="dropdown">
+                        <button class="border-0 bg-white right" type="button" id="dropdownMenuButton"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-layer-group"></i>
+                            <i class="fas fa-layer-group text-secondary ml-2"></i>
                         </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            <button class="dropdown-item" type="button">Action</button>
-                            <button class="dropdown-item" type="button">Another action</button>
-                            <button class="dropdown-item" type="button">Something else here</button>
+                        <div class="dropdown-menu text-right border-0 shadow rounded  "
+                            aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">دیجیتال</a>
+                            <a class="dropdown-item" href="#">لوازم خانگی</a>
+
+                            <a class="dropdown-item" href="#">لوازم ورزشی</a>
+
+
                         </div>
                     </div>
+                    <!-- <div class="btn-group ">
+                        <button type="button" class="btn bg-white border-0 right text-secondary " data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-layer-group"></i>
+                        </button>
+                        <div class="dropdown-menu text-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">ورود به حساب کاربری</a>
+                            <a class="dropdown-item" href="#">ثبت نام</a>
+                        </div>
+                    </div> -->
                 </form>
 
-                <div class="d-flex btn-group-toggle my-2 my-lg-0" style="height: 40px;" data-toggle="buttons">
+                <div class="dropdown ">
+                    <button class="border-0 rounded p-1 bg-danger" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="d-flex align-items-center p-0 px-1">
+                            <i class="fas fa-shopping-cart text-white fa-2x"></i>
+                            <p class="m-0 text-white">سبد خرید</p>
+                            <p class="m-0 mr-4 py-1 px-2 bg-white rounded-circle ">0 </p>
+
+
+
+                        </div>
+
+                    </button>
+                    <div class="dropdown-menu text-center border-0 shadow rounded "
+                        aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">سبد خرید شما خالیست </a>
+
+                    </div>
+                </div>
+
+                <!-- <div class="d-flex btn-group-toggle my-2 my-lg-0" style="height: 40px;" data-toggle="buttons">
                     <label class="btn grp-btn--left">
                         <input type="radio" name="options" id="option3" autocomplete="off"> <i
-                            class="fas fa-shopping-cart"></i>
+                            class="fas fa-shopping-cart text-light"></i>
                     </label>
                     <label class="btn grp-btn--right active">
-                        <input class="buy" type="radio" name="options" id="option1" autocomplete="off" checked> سبد
+                        <input class="buy text-light buy-basket" type="radio" name="options" id="option1"
+                            autocomplete="off" checked> سبد
                         خرید
                     </label>
-                </div>
+                </div> -->
 
             </div>
         </div>
@@ -128,13 +164,13 @@
 
 
         <div class="dropdown mr-auto px-2 py-1 border rounded">
-            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                ورود به حساب کاربری
+            <button class="bg-white border-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                ورود به حساب کاربری<i class="far fa-user pr-2"></i>
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#"></a>
-                <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-menu text-right" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">ورود به حساب کاربری</a>
+                <a class="dropdown-item" href="#">ثبت نام</a>
             </div>
         </div>
 
@@ -145,14 +181,14 @@
     </nav>
 
     <!-- slider -->
-    <div class="container">
+    <div class="container p-0">
         <div class="row mt-5">
             <div class="col-md-3">
                 <a href="">
-                    <img class="card-img " src="./img/digistyle.jpg" style="height: 280px;" alt="Card image">
+                    <img class="card-img-2 w-100" src="./img/digistyle.jpg" style="height: 280px;" alt="Card image">
                 </a>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-6">
                 <div id="carouselExampleIndicators" class="carousel main-carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -183,12 +219,21 @@
                     </a>
                 </div>
             </div>
+
+            <div class="col-md-3 d-flex flex-column justify-content-around">
+                <a href="">
+                    <img class="card-img-2 mb-3" src="./img/froshande.jpg" style="height: 130px;" alt="Card image">
+                </a>
+                <a href="">
+                    <img class="card-img-2 " src="./img//iran.jpg" style="height: 130px;" alt="Card image">
+                </a>
+            </div>
         </div>
     </div>
 
     <!-- takhfifdar ha -->
     <section class="off p-5 ">
-        <div class="container">
+        <div class="container p-0">
             <div class="row ">
                 <div class="col-md-9 ">
                     <!-- Slider main container -->
@@ -272,10 +317,11 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card p-2 bg-white d-flex justify-content-center">
+                    <!-- <div class="card p-2 bg-white d-flex justify-content-center" style="height: 358px;">
+
                         <h6 class="card-title text-right">پیشنهادات لحظه ای برای شما</h6>
 
-                        <img class="card-img-top w-75 m-auto" src="./img/teles.jpg" alt="Card image cap">
+                        <img class="card-img-top w-50 m-auto" src="./img/teles.jpg" alt="Card image cap">
                         <div class="card-body">
 
                             <p class="card-text text-right">تابلو سه تیکه ایشیل</p>
@@ -284,10 +330,21 @@
                                     class="text-muted">25000</del></p>
                             <p class="card-text font-weight-bold mt-1"> 15000 تومان </p>
                             <div id="myItem1"></div>
+                            <div class="progress" style="height: 1px;">
+                                <div class="progress-bar text-left bg-danger" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
 
                             <a href="#" class="btn btn-danger px-2 py-0 d-block mt-4 ">مشخصات</a>
                         </div>
+                    </div> -->
+                    <div class="bg-danger w-100 h-100 rounded text-white px-3 pt-5 text-center">
+                        <h3> پیشنهادات <br> تخفیف دار</h3>
+                        <img src="./img/b6c724a0 copy.png" class="w-75" alt="">
+                        <a href="#" class="btn btn-outline-light px-2 py-0 d-block mt-4 ">ادامه</a>
+
                     </div>
+
                 </div>
 
             </div>
@@ -296,7 +353,7 @@
 
     <!-- DASTEbandi -->
     <section class="category mb-5">
-        <div class="container">
+        <div class="container p-0">
             <div class="row">
                 <div class="col-md-3">
                     <a href="">
@@ -318,7 +375,7 @@
                         <img class="card-img " src="./img/1000003570.jpg" alt="Card image">
                     </a>
                 </div>
-                <div class="col mt-4 px-0">
+                <div class="col mt-4">
                     <a href="">
                         <div class="card rounded-circle">
                             <img class="card-img" src="./img/banner-2.jpg" alt="Card image">
@@ -408,11 +465,11 @@
     </section>
     <!-- ctgty h200 -->
     <section>
-        <div class="container">
+        <div class="container p-0">
             <div class="row">
                 <div class="col-md-6">
                     <a href="">
-                        <div class="card-h200 card-transform ml-2 my-5"
+                        <div class="card-h200 card-transform my-5"
                             style="background-image: url(./img/bag&shoe.jpg); height: 200px; ">
                             <div class="card-h200_right text-right">
                                 <h6>انواع کیف</h6>
@@ -425,7 +482,7 @@
 
                 <div class="col-md-6">
                     <a href="">
-                        <div class="card-h200 card-transform ml-2 my-5"
+                        <div class="card-h200 card-transform my-5"
                             style="background-image: url(./img/whatch.jpg); height: 200px; ">
                             <div class="card-h200_left text-left">
                                 <h6>انواع ساعت</h6>
