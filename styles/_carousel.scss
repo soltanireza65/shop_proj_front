@@ -1,7 +1,20 @@
-.main-carousel{
-    &__item{
-        img{
-            border-radius: 10px;
-        }
+.main-carousel {
+  &__item {
+    img {
+      border-radius: 10px;
     }
+  }
+}
+
+#carouselExampleIndicators > ol > li.carousel_indicator {
+  width: 7px !important;
+  height: 7px !important;
+  border-radius: 50%;
+  transition: all 0.9s;
+}
+
+#carouselExampleIndicators > ol > li.carousel_indicator.active {
+  width: 30px !important;
+  height: 7px !important;
+  border-radius: 10% !important;
 }
