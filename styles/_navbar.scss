@@ -1,0 +1,55 @@
+*:focus,
+*:active {
+    outline: none !important;
+    border: none;
+    /* border-color: inherit !important; */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+
+.search-box{
+    width: 500px !important;
+    border: none;
+    &:focus{
+        border: none;
+    }
+    @media (max-width: 1000px){
+        width: 400px !important;
+
+    }
+}
+
+.search-box2{
+    width: 100% !important;
+}
+
+// input{
+//     border: none;
+
+// }
+
+
+.left{
+    border-radius: 0 5px 5px 0;
+    background-color: white;
+    
+}
+.middle{
+    border-radius: 0 ;
+    background-color: white;
+    &:focus{
+        outline: none;
+        border: none;
+    }
+}
+.right{
+    border-radius: 5px 0 0 5px ;
+    background-color: white;
+
+}
+
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}

@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstarp -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!-- fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
+
+    <!-- crsl -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- prgrs br -->
+    <link rel="stylesheet" type="text/css" href="loading-bar.css" />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+    <style>
+      .swiper-container,
+      .swiper-container2 {
+        width: 100%;
+        height: 101%;
+      }
+
+      .swiper-slide {
+        width: 30%;
+      }
+
+      #myDIV {
+        display: none;
+      }
+    </style>
+
+    <title>صفحه محصول</title>
+  </head>
+
+  <body>
+    <div class="container"></div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+
+    <!-- navbar -->
+    <div class="container">
+      <div class="row my-2">
+        <div class="col d-flex justify-content-between align-items-center">
+          <div class="logo">
+            <a href="">
+              <h3 class="text-danger font-weight-bold d-flex">DOKAN</h3>
+            </a>
+          </div>
+          <div class="d-none d-md-block">
+            <form
+              class="form-inline d-flex my-2 my-lg-0 ml-auto bg-white rounded mx-2"
+            >
+              <input
+                style="outline-color: black"
+                class="form-control search-box"
+                type="search"
+                placeholder="جست وجو"
+                aria-label="Search"
+              />
+              <div class="input-group-prepend bg-white">
+                <div class="input-group-text middle border-0">
+                  <a href=""><i class="fas fa-search"></i></a>
+                </div>
+              </div>
+              <div class="dropdown d-none d-md-block">
+                <button
+                  class="border-0 bg-white right"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-layer-group text-secondary ml-2"></i>
+                </button>
+                <div
+                  class="dropdown-menu text-right border-0 shadow rounded"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <a class="dropdown-item" href="#">دیجیتال</a>
+                  <a class="dropdown-item" href="#">لوازم خانگی</a>
+
+                  <a class="dropdown-item" href="#">لوازم ورزشی</a>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="d-md-none d-flex ml-auto">
+            <button class="btn" onclick="myFunction()">
+              <i class="fas fa-search"></i>
+            </button>
+
+            <div id="myDIV" class="">
+              <input
+                style="outline-color: black"
+                class="form-control border-0 search-box2"
+                type="search"
+                placeholder="جست وجو"
+                aria-label="Search"
+              />
+            </div>
+          </div>
+          <div class="dropdown">
+            <button
+              class="border-0 rounded p-1 bg-danger"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <div class="d-flex align-items-center p-0 px-1">
+                <i class="fas fa-shopping-cart text-white fa-2x"></i>
+                <p class="m-0 ml-1 text-white d-none d-lg-block">سبد خرید</p>
+                <p class="m-0 mr-1 py-1 px-2 bg-white rounded-circle">0</p>
+              </div>
+            </button>
+            <div
+              class="dropdown-menu text-center border-0 shadow rounded"
+              aria-labelledby="dropdownMenuButton"
+            >
+              <a class="dropdown-item" href="#">سبد خرید شما خالیست </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav p-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >دسته بندی کالاها <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">سوپر مارکت</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              تخفیف ها و کالاها
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">فروشنده شوید</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">سوالی دارید؟</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="dropdown mr-auto px-2 py-1 border rounded">
+        <button
+          class="bg-white border-0"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          ورود به حساب کاربری<i class="far fa-user pr-2"></i>
+        </button>
+        <div
+          class="dropdown-menu text-right"
+          aria-labelledby="dropdownMenuButton"
+        >
+          <a class="dropdown-item" href="#">ورود به حساب کاربری</a>
+          <a class="dropdown-item" href="#">ثبت نام</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- moshakhasat kala -->
+    <section class="">
+      <div class="container bg-white rounded my-5">
+        <div class="row">
+          <div class="col-md-4">
+            <div
+              class="d-flex justify-content-center bg-light fa-2x text-secondary rounded mt-2"
+            >
+              <a href="">
+                <i class="far fa-heart px-3 py-2 logo-identify"></i>
+              </a>
+              <a href=""> <i class="fas fa-chart-line px-3 py-2"></i> </a>
+              <a href=""> <i class="fas fa-random px-3 py-2"></i> </a>
+              <a href=""> <i class="fas fa-share-alt px-3 py-2"></i> </a>
+            </div>
+            <img src="./img/iphone.jpg" alt="" class="w-100" />
+          </div>
+          <div class="col-md-8">
+            <div class="col-md-12">
+              <h6 class="text-right mb-0 mt-4">
+                اپل آیفون ایکس اس مکس – 256 گیگابایت – دو سیم کارت
+              </h6>
+              <p class="m-0 text-right">
+                Apple iPhone XS Max - 256GB - Dual SIM
+              </p>
+              <div class="d-flex mt-2">
+                <p class="text-muted">
+                  <i class="fas fa-stream pl-1"></i>دسته:
+                  <a href="">کالای دیجیتال</a>
+                </p>
+                <p class="text-muted pr-2">برند: <a href="">اپل</a></p>
+              </div>
+            </div>
+
+            <div class="col-md-6 d-inline-block text-right float-right">
+              <h6 class="text-danger mt-4">ویژگی های محصول</h6>
+              <div class="d-flex">
+                <p class="text-secondary m-0">حافظه داخلی:</p>
+                <p class="text-dark pr-1 m-0">64 گیگ</p>
+              </div>
+              <div class="d-flex">
+                <p class="text-secondary m-0">شبکه های ارتباطی:</p>
+                <p class="text-dark pr-1 m-0">2G, 3G, 4G</p>
+              </div>
+              <div class="d-flex">
+                <p class="text-secondary m-0">سیستم عامل:</p>
+                <p class="text-dark pr-1 m-0">IOS</p>
+              </div>
+              <a href="" class="text-danger">بیشتر</a>
+            </div>
+            <div class="col-md-6 d-inline-block">
+              <div class="px-3 py-4 bg-light rounded mt-2">
+                <div
+                  class="d-flex justify-content-between text-secondary font-weight-bold"
+                >
+                  <p class="">فروشنده:</p>
+                  <p class="">سام تل</p>
+                </div>
+                <hr class="m-0" />
+
+                <div
+                  class="d-flex justify-content-between mt-2 text-secondary font-weight-bold"
+                >
+                  <p>شناسه محصول</p>
+                  <p>نامعلوم</p>
+                </div>
+                <hr class="m-0" />
+
+                <div
+                  class="d-flex justify-content-between mt-2 text-secondary font-weight-bold"
+                >
+                  <p>رنگبندی:</p>
+                  <div class="d-flex">
+                    <p>آبی</p>
+                    <p>قرمز</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end mt-3">
+                  <button type="button" class="btn btn-danger small px-2 pt-0">
+                    <small>افزودن به سبد خرید</small>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- moarefi kala -->
+    <section>
+      <div class="container">
+        <div class="row text-right bg-white rounded p-3">
+          <h6 class="text-danger">معرفی کوتاه</h6>
+
+          <p class="text-secondary text-justify">
+            صفحه‌نمایش بزرگ، چیپست جدید، باتری با ظرفیت بالاتر و نسخه به‌روزی از
+            سیستم‌عامل اندروید نشان از آن دارد که هوآوی فرمول قوی را برای گوشی
+            میان‌رده خود در نظر گرفته است تا سال 2019 را به‌خوبی شروع کند. گوشی
+            «هوآوی پی اسمارت» (Huawei P Smart) که سال قبل به بازار عرضه شد،
+            توانست در مدت بسیار کوتاهی، طرفداران زیادی را به خود جذب کند. نسخه
+            2019 این گوشی هم (حداقل روی کاغذ) گوشی خوش‌ساختی به نظر ا چه اندازه
+            وام‌دار نسل قبلی خود در ساخت و استفاده است.می‌رسد. در این مطلب بررسی
+            خواهیم کرد که این گوشی ت
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- moshakhasate kamel -->
+
+    <section>
+      <div class="container p-0">
+        <ul class="nav nav-tabs border-0 mt-5" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a
+              class="nav-link active border-0 rounded"
+              id="home-tab"
+              data-toggle="tab"
+              href="#home"
+              role="tab"
+              aria-controls="home"
+              aria-selected="true"
+              >مشخصات</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="profile-tab"
+              data-toggle="tab"
+              href="#profile"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="false"
+              >نظرات کاربران</a
+            >
+          </li>
+          <!-- <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                        aria-controls="contact" aria-selected="false">Contact</a>
+                </li> -->
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active text-right bg-white rounded p-2"
+            id="home"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+          >
+            <h6 class="text-danger p-3">مشخصات کلی</h6>
+
+            <div class="row">
+              <div class="col-3 col-md-2">
+                <p class="p-2 text-center text-secondary m-1">ابعاد</p>
+              </div>
+              <div class="col-9 col-md-10">
+                <p class="p-2 pr-0 bg-light rounded text-dark m-1">
+                  8.5 × 73.8 × 158.1 میلی‌متر
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3 col-md-2">
+                <p class="p-2 text-center text-secondary m-1">سیم کارت</p>
+              </div>
+              <div class="col-9 col-md-10">
+                <p class="p-2 pr-0 bg-light rounded text-dark m-1">
+                  سایز نانو (8.8 × 12.3 میلی‌متر)
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3 col-md-2">
+                <p class="p-2 text-center text-secondary m-1">وزن</p>
+              </div>
+              <div class="col-9 col-md-10">
+                <p class="p-2 pr-0 bg-light rounded text-dark m-1">180 گرم</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3 col-md-2">
+                <p class="p-2 text-center text-secondary m-1">ساختار بدنه</p>
+              </div>
+              <div class="col-9 col-md-10">
+                <p class="p-2 pr-0 bg-light rounded text-dark m-1">
+                  فلز و شیشه (محافظ گوریلا گلس 5 روی قاب پشتی + فریم آلومینیومی)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade text-right bg-white rounded p-2"
+            id="profile"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+          >
+            <div class="row">
+              <!-- <div class="col-md-6">
+                            <div class="bg-light rounded p-3">
+                                <h6 class="text-danger pb-3">
+                                    امتیاز کاربران به محصول مورد نظر
+                                </h6>
+                                <p class="mb-1 mt-2 text-secondary">ارزش خرید</p>
+
+                                <div class="progress" style="height: 3px;">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="mb-1 mt-2 text-secondary">کیفیت ساخت</p>
+
+                                <div class="progress" style="height: 3px;">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="mb-1 mt-2 text-secondary">نوآوری</p>
+
+                                <div class="progress" style="height: 3px;">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 70%;"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="mb-1 mt-2 text-secondary">سهولت استفاده</p>
+
+                                <div class="progress" style="height: 3px;">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="mb-1 mt-2 text-secondary">امکانات و قابلیت ها</p>
+
+                                <div class="progress" style="height: 3px;">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 75%;"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-6 pl-4">
+                            <h6 class="text-danger pb-3">
+                                شما هم می‌توانید در مورد این کالا نظر بدهید.
+                            </h6>
+                            <p class="text-secondary">
+                                برای ثبت نظر، از طریق دکمه زیر اقدام نمایید. اگر این محصول را قبلا از نگارشاپ خریده
+                                باشید، نظر شما به عنوان مالک محصول ثبت خواهد شد.
+                            </p>
+                            <div class="mt-4">
+                                <button type="button" class="btn btn-danger small px-2 pt-0"><small>افزودن نظر
+                                        جدید</small></button>
+                            </div>
+                        </div> -->
+              <div class="col">
+                <h6 class="text-danger p-3">نظرت کاربران</h6>
+                <div class="bg-light rounded p-3">
+                  <p class="font-weight-bold text-secondary p-2">
+                    <i class="far fa-user pl-2"></i>amirreza-mohammadi
+                  </p>
+                  <div class="row text-secondary">
+                    <div class="col-6">
+                      <p class="font-weight-bold text-danger">
+                        <i class="fas fa-plus pl-2"></i>نقاط قوت
+                      </p>
+                      <li>صفحه نمایش</li>
+                    </div>
+                    <div class="col-6">
+                      <p class="font-weight-bold text-danger">
+                        <i class="fas fa-minus pl-2"></i>نقاط ضعف
+                      </p>
+                      <li>صفحه نمایش</li>
+                    </div>
+                  </div>
+                  <p class="text-secondary pt-3">
+                    من 6 ماه پیش این محصول و خریدم و کاملا راضی
+                  </p>
+                </div>
+                <p class="font-weight-bold text-secondary pt-3 mb-0">
+                  متن دیدگاه:
+                </p>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1"></label>
+                  <textarea
+                    class="form-control bg-light border-0 form-control-sm"
+                    placeholder="دیدگاه خود را بنویسید"
+                    id="exampleFormControlTextarea1"
+                    rows="4"
+                  ></textarea>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <label for="exampleFormControlInput1 ">
+                        <p class="font-weight-bold text-secondary pt-3 mb-0">
+                          نام شما:
+                        </p>
+                      </label>
+                      <input
+                        type="name"
+                        class="form-control bg-light border-0 form-control-sm"
+                        id="exampleFormControlInput1"
+                        placeholder="نام خود را بنویسید"
+                      />
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="exampleFormControlInput1 ">
+                        <p class="font-weight-bold text-secondary pt-3 mb-0">
+                          ایمیل شما:
+                        </p>
+                      </label>
+                      <input
+                        type="email"
+                        class="form-control bg-light border-0 form-control-sm"
+                        id="exampleFormControlInput1"
+                        placeholder="ایمیل خود را بنویسید"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn btn-danger small px-2 pt-0 pb-1 mt-4"
+                  >
+                    <small>افزودن نظر جدید</small>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-gray pt-4 mt-5">
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+        <div class="row">
+          <div class="col-md-2 mx-auto text-right">
+            <a href="">
+              <h6 class="font-weight-bold text-uppercase mt-3 mb-4">
+                راهنمای خرید از دکان
+              </h6>
+            </a>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">نحوه ثبت سفارش</a>
+              </li>
+              <li>
+                <a href="#!">رویه ارسال سفارش</a>
+              </li>
+              <li>
+                <a href="#!">شیوه‌های پرداخت</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 mx-auto text-right">
+            <a href="">
+              <h6 class="font-weight-bold text-uppercase mt-3 mb-4">
+                خدمات مشتری
+              </h6>
+            </a>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">پاسخ به پرسش‌های متداول</a>
+              </li>
+              <li>
+                <a href="#!">رویه‌های بازگرداندن کالا</a>
+              </li>
+              <li>
+                <a href="#!">شرایط استفاده</a>
+              </li>
+              <li>
+                <a href="#!">حریم خصوصی</a>
+              </li>
+              <li>
+                <a href="#!">گزارش باگ</a>
+              </li>
+            </ul>
+          </div>
+
+          <hr class="clearfix w-100 d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 mx-auto text-right">
+            <a href="">
+              <h6 class="font-weight-bold text-uppercase mt-3 mb-4">با دکان</h6>
+            </a>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">اتاق خبر دکان</a>
+              </li>
+              <li>
+                <a href="#!">فروش در دکان</a>
+              </li>
+              <li>
+                <a href="#!">تماس با دکان</a>
+              </li>
+              <li>
+                <a href="#!">درباره دکان</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-4 mx-auto text-right">
+            <h6 class="font-weight-bold text-uppercase mt-3 mb-4 text-dark">
+              از تخفیف ها و محصولات جدید دکان با خبر شو:
+            </h6>
+            <div class="d-flex">
+              <input
+                type="email"
+                class="form-control br-left"
+                id="inputEmail4"
+                placeholder="ایمیل"
+              />
+
+              <button type="button" class="btn btn-danger br-right">
+                ارسال
+              </button>
+            </div>
+
+            <h6 class="font-weight-bold text-uppercase mt-3 mb-4 text-dark">
+              دکان را در شبکه های اجتماعی دنبال کنید:
+            </h6>
+            <div class="d-flex">
+              <a href=""><i class="fab fa-instagram fa-2x ml-2"></i></a>
+              <a href=""><i class="fab fa-telegram fa-2x ml-2"></i></a>
+              <a href=""><i class="fab fa-twitter-square fa-2x"></i></a>
+            </div>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none" />
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+
+      <hr />
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020 PayPracts</div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap -->
+
+    <!-- prgrs br -->
+    <script type="text/javascript" src="loading-bar.js"></script>
+    <script>
+      /* construct manually */
+      var bar1 = new ldBar("#myItem1");
+      /* ldBar stored in the element */
+      var bar2 = document.getElementById("myItem1").ldBar;
+      bar1.set(60);
+    </script>
+
+    <!-- crsl -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      // function slider(id) {
+      new Swiper(".swiper-container", {
+        breakpoints: {
+          480: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 3,
+          },
+          1000: {
+            slidesPerView: 4,
+          },
+        },
+
+        slidesPerView: "auto",
+        autoplay: {
+          delay: 3000,
+        },
+        loop: true,
+        spaceBetween: 10,
+      });
+      new Swiper(".swiper-container2", {
+        breakpoints: {
+          480: {
+            slidesPerView: 2,
+          },
+          640: {
+            slidesPerView: 3,
+          },
+          950: {
+            slidesPerView: 6,
+          },
+        },
+
+        slidesPerView: "auto",
+        autoplay: {
+          delay: 3000,
+        },
+        loop: true,
+        spaceBetween: 10,
+      });
+      new Swiper(".swiper-container3", {
+        breakpoints: {
+          480: {
+            slidesPerView: 4,
+          },
+          640: {
+            slidesPerView: 9,
+          },
+        },
+
+        slidesPerView: "auto",
+        autoplay: {
+          delay: 4000,
+        },
+        loop: true,
+        spaceBetween: 10,
+      });
+
+      // }
+
+      // slider('.swiper-container')
+      // slider('.swiper-container2')
+    </script>
+  </body>
+</html>
