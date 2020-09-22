@@ -37,8 +37,42 @@
   outline: none;
 }
 
+.radius {
+  border-radius: 10px;
+}
+
+.card-img, .card-transform {
+  border-radius: 10px;
+  -webkit-transition: all, .2s;
+  transition: all, .2s;
+  background-size: cover;
+}
+
+.card-img:hover, .card-transform:hover {
+  margin-top: -3px;
+  -webkit-box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3);
+}
+
+.card-h200 {
+  position: relative;
+}
+
+.card-h200_right {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.card-h200_left {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
 .app_card {
   border: none;
+  overflow: hidden;
 }
 
 @-webkit-keyframes fadeIn {
@@ -105,10 +139,11 @@
 .app_card_image {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  padding: 10px;
 }
 
 .product_icons_wraper {
-  top: 40%;
+  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
