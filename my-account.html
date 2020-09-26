@@ -51,7 +51,7 @@
   </script>
 
 
-  <div class="container p-0">
+  <div class="container p-0" style="width: 600px;">
     <ul class="nav nav-tabs border-0 mt-5 d-flex justify-content-center " id="myTab" role="tablist">
       <li class="nav-item ">
         <a class="nav-link active border-0 rounded px-5 text-center" id="home-tab" data-toggle="tab" href="#home"
@@ -83,49 +83,34 @@
             </li> -->
     </ul>
     <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade show active text-right bg-white rounded p-2" id="home" role="tabpanel"
+      <div class="tab-pane fade show active text-right bg-white rounded px-5 py-3" id="home" role="tabpanel"
         aria-labelledby="home-tab">
 
         <div class="row">
-          <div class="col-3 col-md-2">
-            <p class="p-2 text-center text-secondary m-1">ابعاد</p>
+          <div class="col-12">
+            <label for="exampleFormControlInput1 ">
+              <p class="font-weight-bold text-secondary pt-3 mb-0">
+                نام کاربری یا آدرس ایمیل:
+              </p>
+            </label>
+            <input type="name" class="form-control bg-light border-0 form-control-sm" id="exampleFormControlInput1"
+              placeholder="نام کاربری یا ایمیل خود را وارد کنید" />
           </div>
-          <div class="col-9 col-md-10">
-            <p class="p-2 pr-0 bg-light rounded text-dark m-1">
-              8.5 × 73.8 × 158.1 میلی‌متر
-            </p>
+          <div class="col-12">
+            <label for="exampleFormControlInput1 ">
+              <p class="font-weight-bold text-secondary mt-4 mb-0 ">
+                گذرواژه: </p>
+            </label>
+            <input type="password" class="form-control bg-light border-0 form-control-sm " id="exampleFormControlInput1"
+              placeholder="گذرواژه خود را وارد نمایید" />
           </div>
+          <a href="" class="text-danger pr-3 pt-1">گذر واژه خود را فراموش کرده اید؟</a>
         </div>
-        <div class="row">
-          <div class="col-3 col-md-2">
-            <p class="p-2 text-center text-secondary m-1">سیم کارت</p>
-          </div>
-          <div class="col-9 col-md-10">
-            <p class="p-2 pr-0 bg-light rounded text-dark m-1">
-              سایز نانو (8.8 × 12.3 میلی‌متر)
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-3 col-md-2">
-            <p class="p-2 text-center text-secondary m-1">وزن</p>
-          </div>
-          <div class="col-9 col-md-10">
-            <p class="p-2 pr-0 bg-light rounded text-dark m-1">180 گرم</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-3 col-md-2">
-            <p class="p-2 text-center text-secondary m-1">ساختار بدنه</p>
-          </div>
-          <div class="col-9 col-md-10">
-            <p class="p-2 pr-0 bg-light rounded text-dark m-1">
-              فلز و شیشه (محافظ گوریلا گلس 5 روی قاب پشتی + فریم آلومینیومی)
-            </p>
-          </div>
-        </div>
+        <button type="button" class="btn btn-danger small px-2 pt-0 pb-1 mt-4 ">
+          <small>ورود به دکان</small>
+        </button>
       </div>
-      <div class="tab-pane fade text-right bg-white rounded p-2" id="profile" role="tabpanel"
+      <div class="tab-pane fade text-right bg-white rounded px-5" id="profile" role="tabpanel"
         aria-labelledby="profile-tab">
         <div class="row">
           <!-- <div class="col-md-6">
@@ -182,12 +167,12 @@
                         </div>
                     </div> -->
           <div class="col">
-           
+
             <div class="form-group">
               <label for="exampleFormControlTextarea1"></label>
-               
+
               <div class="row">
-                <div class="col-sm-6">
+                <div class="col-12">
                   <label for="exampleFormControlInput1 ">
                     <p class="font-weight-bold text-secondary pt-3 mb-0">
                       نام شما:
@@ -196,7 +181,7 @@
                   <input type="name" class="form-control bg-light border-0 form-control-sm"
                     id="exampleFormControlInput1" placeholder="نام خود را بنویسید" />
                 </div>
-                <div class="col-sm-6">
+                <div class="col-12">
                   <label for="exampleFormControlInput1 ">
                     <p class="font-weight-bold text-secondary pt-3 mb-0">
                       ایمیل شما:
@@ -206,8 +191,8 @@
                     id="exampleFormControlInput1" placeholder="ایمیل خود را بنویسید" />
                 </div>
               </div>
-              <button type="button" class="btn btn-danger small px-2 pt-0 pb-1 mt-4">
-                <small>افزودن نظر جدید</small>
+              <button type="button" class="btn btn-danger small px-2 pt-0 pb-1 mt-4 ">
+                <small>ثبت نام در دکان</small>
               </button>
             </div>
           </div>
@@ -216,122 +201,7 @@
     </div>
   </div>
 
-  <!-- Footer -->
-  <footer class="page-footer font-small bg-gray pt-4 mt-5">
-    <!-- Footer Links -->
-    <div class="container text-center text-md-left">
-      <div class="row">
-        <div class="col-md-2 mx-auto text-right">
-          <a href="">
-            <h6 class="font-weight-bold text-uppercase mt-3 mb-4">
-              راهنمای خرید از دکان
-            </h6>
-          </a>
 
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">نحوه ثبت سفارش</a>
-            </li>
-            <li>
-              <a href="#!">رویه ارسال سفارش</a>
-            </li>
-            <li>
-              <a href="#!">شیوه‌های پرداخت</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Grid column -->
-
-        <hr class="clearfix w-100 d-md-none" />
-
-        <!-- Grid column -->
-        <div class="col-md-2 mx-auto text-right">
-          <a href="">
-            <h6 class="font-weight-bold text-uppercase mt-3 mb-4">
-              خدمات مشتری
-            </h6>
-          </a>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">پاسخ به پرسش‌های متداول</a>
-            </li>
-            <li>
-              <a href="#!">رویه‌های بازگرداندن کالا</a>
-            </li>
-            <li>
-              <a href="#!">شرایط استفاده</a>
-            </li>
-            <li>
-              <a href="#!">حریم خصوصی</a>
-            </li>
-            <li>
-              <a href="#!">گزارش باگ</a>
-            </li>
-          </ul>
-        </div>
-
-        <hr class="clearfix w-100 d-md-none" />
-
-        <!-- Grid column -->
-        <div class="col-md-2 mx-auto text-right">
-          <a href="">
-            <h6 class="font-weight-bold text-uppercase mt-3 mb-4">با دکان</h6>
-          </a>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">اتاق خبر دکان</a>
-            </li>
-            <li>
-              <a href="#!">فروش در دکان</a>
-            </li>
-            <li>
-              <a href="#!">تماس با دکان</a>
-            </li>
-            <li>
-              <a href="#!">درباره دکان</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Grid column -->
-        <!-- Grid column -->
-        <div class="col-md-4 mx-auto text-right">
-          <h6 class="font-weight-bold text-uppercase mt-3 mb-4 text-dark">
-            از تخفیف ها و محصولات جدید دکان با خبر شو:
-          </h6>
-          <div class="d-flex">
-            <input type="email" class="form-control br-left" id="inputEmail4" placeholder="ایمیل" />
-
-            <button type="button" class="btn btn-danger br-right">
-              ارسال
-            </button>
-          </div>
-
-          <h6 class="font-weight-bold text-uppercase mt-3 mb-4 text-dark">
-            دکان را در شبکه های اجتماعی دنبال کنید:
-          </h6>
-          <div class="d-flex">
-            <a href=""><i class="fab fa-instagram fa-2x ml-2"></i></a>
-            <a href=""><i class="fab fa-telegram fa-2x ml-2"></i></a>
-            <a href=""><i class="fab fa-twitter-square fa-2x"></i></a>
-          </div>
-        </div>
-        <!-- Grid column -->
-
-        <hr class="clearfix w-100 d-md-none" />
-      </div>
-      <!-- Grid row -->
-    </div>
-    <!-- Footer Links -->
-
-    <hr />
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 PayPracts</div>
-    <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
 
   <!-- bootstrap -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
