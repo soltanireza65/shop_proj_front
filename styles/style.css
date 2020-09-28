@@ -285,6 +285,10 @@
   font-family: "iransans";
 }
 
+ul li {
+  list-style: none;
+}
+
 body {
   background: #f4f4f8;
 }

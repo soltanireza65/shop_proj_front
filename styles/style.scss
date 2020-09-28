@@ -4,7 +4,6 @@
 @import "./card";
 @import "./_navbar";
 @import "./footer";
-@import "./account";
 
 
 
@@ -41,6 +40,12 @@
 
 }
 
+ul{
+    li{
+        list-style: none;
+    }
+}
+
 
 body{
     background: rgb(244, 244, 248);
@@ -59,7 +64,5 @@ a{
     height: 300px;
 }
 
-.spacer{
-    height: 5px;
-    display: block;
-}
+
+
