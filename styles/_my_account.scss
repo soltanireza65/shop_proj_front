@@ -1,0 +1,13 @@
+.MyAccount-navigation-link{
+    &:hover{
+        background-color: #f1efef;
+    }
+}
+
+.is-active{
+    background-color: #F8F9FA;
+    a{
+        color: #C82333 !important;
+
+    }
+}

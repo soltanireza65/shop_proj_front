@@ -253,6 +253,18 @@
   border-radius: 5px 0 0 5px;
 }
 
+.MyAccount-navigation-link:hover {
+  background-color: #f1efef;
+}
+
+.is-active {
+  background-color: #F8F9FA;
+}
+
+.is-active a {
+  color: #C82333 !important;
+}
+
 @font-face {
   font-family: "iransans";
   src: url("../font/A-Iranian-Sans/IRANSansWeb(FaNum).woff2");
