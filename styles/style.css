@@ -237,8 +237,10 @@
   background-color: white;
 }
 
-.dropdown:hover > .dropdown-menu {
-  display: block;
+@media (min-width: 1000px) {
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
 }
 
 .list-unstyled li {
@@ -263,6 +265,23 @@
 
 .is-active a {
   color: #C82333 !important;
+}
+
+.mega-menu {
+  width: 950px;
+  overflow: hidden;
+  padding: 10px;
+  outline: none;
+  border: none;
+  position: absolute;
+  right: 10px;
+  top: 50px;
+}
+
+@media (max-width: 500px) {
+  .mega-menu {
+    width: 100%;
+  }
 }
 
 @font-face {

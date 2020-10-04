@@ -1,0 +1,12 @@
+.mega-menu {
+  width: 800px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+@media (max-width: 500px) {
+  .mega-menu {
+    width: 500px;
+  }
+}
+/*# sourceMappingURL=mega-menu.css.map */
