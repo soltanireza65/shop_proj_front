@@ -238,9 +238,120 @@
 }
 
 @media (min-width: 1000px) {
-  .dropdown:hover > .dropdown-menu {
+  .dropdown:hover .dropdown-menu {
     display: block;
   }
+}
+
+.menu-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  -webkit-transition: right 0.4s ease;
+  transition: right 0.4s ease;
+  width: 40px;
+  height: 40px;
+  text-align: center !important;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.menu-btn .fas {
+  font-size: 1.3rem;
+  line-height: 40px;
+  text-align: center;
+}
+
+.menu-btn.click {
+  right: 310px;
+}
+
+.menu-btn.click span:before {
+  content: '\f00d';
+}
+
+.sidbar-menu {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  right: -300px;
+  background-color: white;
+  -webkit-transition: right 0.4s ease;
+  transition: right 0.4s ease;
+}
+
+.sidbar-menu .sidbar-text {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 55px;
+}
+
+.sidbar-menu.show {
+  right: 0;
+}
+
+.sidbar-menu ul {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+
+.sidbar-menu ul .feat-show.show {
+  display: block;
+}
+
+.sidbar-menu ul .serv-show.show1 {
+  display: block;
+}
+
+.sidbar-menu ul .digi-show.show2 {
+  display: block;
+}
+
+.sidbar-menu ul li {
+  line-height: 40px;
+}
+
+.sidbar-menu ul li a {
+  padding-right: 20px;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.sidbar-menu ul li a:hover, .sidbar-menu ul li a:active, .sidbar-menu ul li a:focus {
+  background-color: #f1efef !important;
+  color: #C82333;
+}
+
+.sidbar-menu ul li a span {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.sidbar-menu ul li a span.rotate {
+  -webkit-transform: translateY(-50%) rotate(-180deg);
+          transform: translateY(-50%) rotate(-180deg);
+}
+
+.sidbar-menu ul ul {
+  position: static;
+  display: none;
+}
+
+.sidbar-menu ul ul li {
+  line-height: 30px;
+}
+
+.sidbar-menu ul ul li a {
+  padding-right: 30px;
+  font-size: 0.8rem;
 }
 
 .list-unstyled li {
@@ -282,6 +393,16 @@
   .mega-menu {
     width: 100%;
   }
+}
+
+.sub-menu:hover, .sub-menu:focus, .sub-menu:active {
+  background-color: #f1efef !important;
+  color: #C82333;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #535353;
+  background-color: #f1efef;
 }
 
 @font-face {
