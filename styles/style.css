@@ -218,7 +218,7 @@
 }
 
 .left {
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0 !important;
   background-color: white;
 }
 
@@ -233,7 +233,7 @@
 }
 
 .right {
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px !important;
   background-color: white;
 }
 
@@ -243,28 +243,49 @@
   }
 }
 
-.menu-btn {
-  position: absolute;
-  top: 15px;
-  right: 15px;
+.menu-btn, .menu-btn-acc, .menu-btn-shop {
   cursor: pointer;
   -webkit-transition: right 0.4s ease;
   transition: right 0.4s ease;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   text-align: center !important;
   border-radius: 5px;
-  background-color: white;
 }
 
-.menu-btn .fas {
+.menu-btn .fas, .menu-btn-acc .fas, .menu-btn-shop .fas {
   font-size: 1.3rem;
-  line-height: 40px;
+  line-height: 35px;
   text-align: center;
 }
 
+.menu-btn button .far, .menu-btn-acc button .far, .menu-btn-shop button .far {
+  font-size: 1.3rem;
+  line-height: 35px;
+  text-align: center;
+}
+
+.menu-btn button .fas, .menu-btn-acc button .fas, .menu-btn-shop button .fas {
+  font-size: 1.3rem;
+  line-height: 35px;
+  text-align: center;
+}
+
+.menu-btn, .menu-btn-acc {
+  position: absolute;
+  top: 15px;
+}
+
+.menu-btn {
+  right: 15px;
+}
+
+.menu-btn-acc {
+  left: 15px;
+}
+
 .menu-btn.click {
-  right: 310px;
+  right: 260px;
 }
 
 .menu-btn.click span:before {
@@ -273,12 +294,13 @@
 
 .sidbar-menu {
   position: fixed;
-  width: 300px;
+  width: 250px;
   height: 100%;
-  right: -300px;
+  right: -250px;
   background-color: white;
   -webkit-transition: right 0.4s ease;
   transition: right 0.4s ease;
+  z-index: 2;
 }
 
 .sidbar-menu .sidbar-text {
@@ -307,6 +329,14 @@
 }
 
 .sidbar-menu ul .digi-show.show2 {
+  display: block;
+}
+
+.sidbar-menu ul .Clothing-show.show3 {
+  display: block;
+}
+
+.sidbar-menu ul .beauty-show.show4 {
   display: block;
 }
 
@@ -457,5 +487,24 @@ a:hover {
 
 .bg-primary {
   height: 300px;
+}
+
+.icon-size-sm {
+  font-size: 15px;
+}
+
+.icon-size-md {
+  font-size: 20px;
+}
+
+.icon-bg {
+  padding: 10px;
+  background-color: #F4F4F8;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.icon-bg:hover {
+  color: #DC3545;
 }
 /*# sourceMappingURL=style.css.map */

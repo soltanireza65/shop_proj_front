@@ -31,7 +31,7 @@
 
 
 .left{
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0 !important;
     background-color: white;
     
 }
@@ -44,7 +44,7 @@
     }
 }
 .right{
-    border-radius: 5px 0 0 5px ;
+    border-radius: 5px 0 0 5px !important ;
     background-color: white;
 
 }
@@ -59,27 +59,48 @@
 
 // side nav
 
-.menu-btn{
-    position: absolute;
-    top: 15px;
-    right: 15px;
+.menu-btn , .menu-btn-acc , .menu-btn-shop{
     cursor: pointer;
     transition: right 0.4s ease;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     text-align: center !important;
     border-radius: 5px;
-
-    background-color: white;
+    // background-color: white;
     .fas{
         font-size: 1.3rem;
-        line-height: 40px;
+        line-height: 35px;
         text-align: center;
+    }
+    button{
+        .far{
+            font-size: 1.3rem;
+            line-height: 35px;
+            text-align: center;
+        }
+        .fas{
+            font-size: 1.3rem;
+            line-height: 35px;
+            text-align: center;
+        }
     }
 }
 
+.menu-btn , .menu-btn-acc{
+    position: absolute;
+    top: 15px;
+}
+
+.menu-btn{
+    right: 15px;
+}
+.menu-btn-acc{
+    left: 15px;
+}
+
+
 .menu-btn.click{
-    right: 310px;
+    right: 260px;
 }
 .menu-btn.click span:before{
 content: '\f00d';
@@ -87,11 +108,12 @@ content: '\f00d';
 
 .sidbar-menu{
 position: fixed;
-width: 300px;
+width: 250px;
 height: 100%;
-right: -300px;
+right: -250px;
 background-color: white;
 transition: right 0.4s ease;
+z-index: 2;
 
 .sidbar-text{
     font-size: 1.1rem;
@@ -119,6 +141,12 @@ transition: right 0.4s ease;
     display: block;
 }
 .sidbar-menu ul .digi-show.show2{
+    display: block;
+}
+.sidbar-menu ul .Clothing-show.show3{
+    display: block;
+}
+.sidbar-menu ul .beauty-show.show4{
     display: block;
 }
 

@@ -68,5 +68,24 @@ a{
     height: 300px;
 }
 
+.icon-size-sm{
+    font-size: 15px;
+
+}
+.icon-size-md{
+    font-size: 20px;
+
+}
+
+.icon-bg{
+    padding: 10px;
+    background-color:#F4F4F8;
+    border-radius: 25px;
+    cursor: pointer;
+    &:hover{
+        color: #DC3545;
+
+    }
+}
 
 
